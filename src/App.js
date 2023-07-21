@@ -1,9 +1,14 @@
-import './App.css';
+import './App.scss'
+import Layout from './components/Layout/Layout'
+import { Route, Routes } from 'react-router-dom'
+
 
 function App() {
-  return (
-   <>hello guys</>
-  );
+  return (<>
+      <Routes>
+        <Route path="/" element={<Layout/>}/>
+      </Routes>
+    </>)
 }
 
-export default App;
+export default App
