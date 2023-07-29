@@ -24,8 +24,8 @@ const Contacts = () => {
     e.preventDefault()
     emailjs.sendForm('service_t909kqa', 'template_athi9dl', refForm.current, 'ZmyeyNePU3W4VpmCH')
       .then(() => {
-          // eslint-disable-next-line no-unused-expressions
-          alert('Message successfully sent!'), window.location.reload(false)
+          // eslint-disable-next-line no-unused-expressions,no-sequences
+          alert('Message successfully sent!'); window.location.reload()
         },
         () => {
           alert('Failed to send message, please try again.')
